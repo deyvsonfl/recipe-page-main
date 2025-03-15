@@ -127,6 +127,9 @@ hr {
     font-size: 1rem;
   }
 
+  .container img {
+    height: 180px;
+  }
   .container p {
     font-size: 1rem;
   }
@@ -157,6 +160,38 @@ hr {
 
   .nutrition {
     text-align: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    width: 100%; /* Define a largura */
+    max-width: 800x; /* Evita que fique muito largo */
+    padding: 20px;
+  }
+
+  .container h1 {
+    margin: 15px 0 10px 0;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+  .preparation-time {
+    background-color: hsl(334, 100%, 97%);
+    padding: 10px 10px 5px 10px;
+    border-radius: 8px;
+  }
+
+  .ingredients li,
+  .instructions li {
+    margin-bottom: 10px;
   }
 
   .row {
